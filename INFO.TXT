@@ -1,0 +1,23 @@
+Arquivos que constam neste disquete :
+
+Somat.Exe     -  Arquivo executavel
+
+Edi.Hlp
+Exec.Hlp
+Diret.Hlp
+Visu.Hlp
+Espec.Hlp
+Fim.Hlp
+Imagens.Fig   -  Arquivos de informacao
+
+trip.chr
+litt.chr
+cga.bgi       -  Arquivos para utilizacao do monitor no modo grafico
+
+Info.txt      - Informacoes sobre o conteudo deste disco
+
+Prog*.ARQ     -  Exemplos de programas de usuario escritos para o ambiente
+
+*.SOS         -  Arquivos contendo o resultado da execucao de programas
+
+

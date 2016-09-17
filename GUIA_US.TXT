@@ -1,0 +1,1189 @@
+
+
+
+
+
+
+
+
+                                      SOMAT
+
+           Sistema Operacional Multiprogramado Aberto Para Treinamento
+
+
+
+
+
+                            Documenta‡âo do Software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Indice
+
+
+             1 - Documenta‡âo T‚cnica ................................ 01
+
+                 1.1 - Objetivos ..................................... 01
+                 1.2 - Descri‡âo do software ......................... 01
+                 1.3 - Utiliza‡âo .................................... 01
+                 1.4 - Areas de aplica‡âo ............................ 02
+                 1.5 - Ambiente para execu‡âo ........................ 02
+                 1.6 - Endere‡o para contato ......................... 02
+
+             2 - Documenta‡âo do Produto ............................. 02
+
+                 2.1 - Sistema Operacional Simplificado .............. 02
+                 2.2 - Hardware ...................................... 03
+             
+             3 - Guia do Usu rio ..................................... 04
+
+                 3.1 - Padroniza‡ùes e conven‡ùes .................... 04
+                 3.2 - Ambiente para utiliza‡âo ...................... 05
+                 3.3 - Editor de programas ........................... 06
+                 3.4 - Diret¢rio ..................................... 07
+                 3.5 - Visualiza‡âo .................................. 07
+                 3.6 - Especifica‡âo ................................. 07
+                 3.7 - Execu‡âo de programas ......................... 08
+                 3.8 - Fim de execu‡âo ............................... 09
+                 3.9 - Outras teclas com fun‡ùes ..................... 09
+
+             4 - Exemplo de utiliza‡âo do sistema .................... 09
+
+                 4.1 - Edi‡âo de programas ........................... 10
+                 4.2 - Execu‡âo de programas ......................... 15
+                 4.3 - Diret¢rio ..................................... 15
+                 4.4 - Visualiza‡âo .................................. 15
+                 4.5 - Especifica‡ùes ................................ 15
+                 4.6 - Fim de execu‡âo ............................... 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1 - Documenta‡âo t‚cnica
+
+             1.1 - Objetivos
+
+             Os sistemas operacionais,  de maneira geral, tˆm a fun‡âo de 
+        viabilizar a utiliza‡âo otimizada dos recursos de um sistema. Num 
+        ambiente  multiprogramado,  o sistema operacional deve promover o 
+        compartilhamento de recursos,  atrav‚s da multiplexa‡âo da UCP na 
+        execu‡âo  de tarefas e de t‚cnicas que permitam  o  funcionamento 
+        concomitante dos perif‚ricos e UCP.
+             A  incorpora‡âo de uma ferramenta de apoio ao usu rio  junto 
+        ao   sistema   operacional   ‚  de  vital  importƒncia   para   o 
+        desenvolvimento  e  treinamento  de  pessoal,   pois  facilita  a 
+        intera‡âo  do  usu rio  com o sistema  e  fornece  mecanismos  de 
+        visualiza‡âo voltados para testes e demonstra‡âo.
+             Nesse sentido,  o projeto consiste de um sistema operacional 
+        multiprogramado   conjugado   com  procedimentos  de   apoio   ao 
+        desenvolvimento,  testes  e visualiza‡âo gr fica do funcionamento 
+        do sistema.
+
+             1.2 - Descri‡âo do software
+
+             O  software  ‚ formado por um simulador de uma  m quina  com 
+        recursos   de  multiprograma‡âo,   de  um   sistema   operacional 
+        multiprogramado composto de sete processos concorrentes - leitura 
+        de  programas,  spool  de  entrada,  loader,  pagina‡âo,  E/S  de 
+        programa  de  usu rio,  spool  de sa¡da e impressâo  - e  por  um 
+        conjunto de procedimentos que propicia a entrada de programas e a 
+        visualiza‡âo gr fica do funcionamento do sistema.
+             O   softwrare   constitui-se  de  um   sistema   operacional 
+        multiprogramado,  atuando  num ambiente multiusu rio,  onde  cada 
+        usu rio pode executar programas monotarefa e de uso geral.
+
+             1.3 - Utiliza‡âo
+
+             Com  rela‡âo  …  intera‡âo  do usu rio com  os  recursos  do 
+        sistema,  o ambiente do projeto SOMAT ‚ constitu¡do de um  editor 
+        de  programas,  de um procedimento de verifica‡âo do conte£do dos 
+        arquivos  de  sa¡da,  e de  procedimentos  de  visualiza‡âo,  que 
+        permitem  a monitora‡âo dos programas e dos recursos,  durante  a 
+        execu‡âo do sistema operacional.
+             O  editor de programas corresponde a um editor de  arquivos, 
+        voltado   …  manipula‡âo  das  p ginas  dos  programas  a   serem 
+        executados.   A  finalidade  do  procedimento  de  verifica‡âo  ‚ 
+        permitir  que o usu rio examine o conte£do dos arquivos de sa¡da, 
+        quando  estes  forem  direcionados  para  arquivos  ao  inves  da 
+        impressora.
+             A  visualiza‡âo pode dar-se de quatro maneiras  :  visâo  do 
+        fluxo  de  programas,  visâo  do sistema  operacional,  visâo  do 
+        hardware e visâo dos programas dos usu rios.
+
+
+
+
+
+
+
+                                        1
+
+
+
+
+
+
+
+
+             1.4 - Areas de aplica‡âo
+
+             Treinamento  e estudo em sistemas operacionais,  sistemas de 
+        tempo real, etc.
+
+             1.5 - Ambiente para execu‡âo
+
+             O  sistema  SOMAT foi  desenvolvido  para  microcomputadores 
+        compat¡veis com o modelo PC/XT, com monitor de v¡deo padrâo CGA e 
+        pelo menos uma unidade de disco flex¡vel. Uma impressora pode ser 
+        utilizada para sa¡da do resultado da execu‡âo dos programas.
+
+             A distribui‡âo do sistema ‚ feita em dois disquetes :
+
+             disquete 1 - Sistema SOMAT
+             disquete 2 - Apostila
+                        - Sistema Operacional enxuto ( fonte simplificado 
+                          em c¢digo Pascal )
+
+             1.6 - Endere‡o para contato
+
+             Universidade Federal de Sâo Carlos
+             Centro de Ciˆncias e Tecnologia
+             Departamento de Computa‡âo
+
+             A/C Prof. Dr. Cl udio Kirner
+             ou  H‚lio Crestana Guardia
+
+             Rod. Washington Luiz, Km 235
+             Caixa Postal 676
+             Sâo Carlos - SP
+             CEP 13560  
+             Fone : (0162) 711100 - r 142 / 143
+
+
+
+        2 - Documenta‡âo do produto
+
+             2.1 - Sistema Operacional Simplificado
+
+             O Sistema Operacional Simplificado ‚ um sistema  operacional 
+        multiprogramado,  com  execu‡âo de programas de usu rio em  tempo 
+        partilhado, que opera atrav‚s de compartilhamento da UCP entre os 
+        seus  diversos processos concorrentes e os programas de  usu rios 
+        provenientes de terminais.
+             Um  conjunto de processos simples e um conjunto de processos 
+        especiais compùem os m¢dulos de programas do sistema  operacional 
+        simulado.
+             O  conjunto de processos simples ‚ formado  pelos  seguintes 
+        processos  concorrentes :  Leitura,  Spool de entrada,  Spool  de 
+        sa¡da, Impressâo, Loader, E/S Usu rio e Pagina‡âo. 
+             Os  processos  denominados de escalador  de  programas  para 
+        execu‡âo,  espera de interrup‡âo, e tratamento de interrup‡âo sâo 
+        os processos especiais do sistema operacional, que proporcionam o 
+        seu funcionamento.
+
+
+                                        2
+
+
+
+
+
+
+
+
+             2.2 - Hardware
+
+             O hardware do Computador Simplificado ( CS  ),  implementado 
+        por  software  atrav‚s de procedimentos e  estruturas  de  dados, 
+        simula  um  computador,  contendo  os recursos  necess rios  para 
+        sustentar multiprograma‡âo.
+             Seus componentes incluem :
+
+             - uma unidade central de processamento ( UCP ).
+             - mem¢ria principal de acesso r pido.
+             - uma unidade de armazenamento externo ( disco ).
+             - registradores espec¡ficos e de uso geral
+             - contador do tempo para execu‡âo de programas ( TIMER ).
+             - contador  da fatia de tempo da UCP para a execu‡âo de cada 
+        programa ( TIME SLICE ).
+             - rel¢gio ( CLOCK ).
+             - unidades  de  entrada  e sa¡da de  dados  controladas  por 
+        canais aut“nomos.
+             - vetor de interrup‡ùes
+
+             Constru¡do  com a finalidade de proporcionar um ambiente que 
+        restringisse os detalhes da implementa‡âo do sistema  operacional 
+        somente  …s suas caracter¡sticas funcionais,  o hardware simulado 
+        abstrai detalhes de baixo n¡vel na sua constru‡âo.
+             A  unidade  central  de processamento opera  atrav‚s  de  um 
+        conjunto  simplificado  de instru‡ùes de m quina  que  permite  a 
+        elabora‡âo  de  programas de usu rio,  envolvendo manipula‡âo  de 
+        posi‡ùes de mem¢ria,  opera‡ùes aritm‚ticas, controle de desvio e 
+        parada de programas,  e opera‡ùes de E/S.  
+             As seguintes opera‡ùes sâo implementadas :
+
+             HLT : Indica o fim de processamento de um programa.
+             RD  XY  0  :  Lˆ  a  p gina  corrente da  rea  de  dados  do 
+        programa  no disco e carrega o seu conte£do na p gina XY da   rea 
+        de rascunho do programa. 
+             PRN  XY 0 :  Imprime,  na  rea de impressâo do disco alocada 
+        pelo programa, o conte£do da p gina XY de rascunho desse programa.
+             LD XYZ : Carrega no acumulador ( ACC ) o conte£do da palavra 
+        Z  da p gina XY da  rea de rascunho do programa sendo  executado. 
+             STR XYZ :  Armazena o conte£do do acumulador na palavra Z da 
+        p gina  XY da  rea de rascunho do programa.
+             SUB  XYZ :  Atribui ao acumulador o valor correspondente  ao 
+        valor  que  continha  subtra¡do do valor armazenado  no  primeiro 
+        campo  da palavra Z da p gina XY da  rea de rascunho do  programa 
+        do usu rio.
+             ADD  XYZ  :  Idem … subtra‡âo,  atribuindo ao  acumulador  o 
+        resultado da soma ao inv‚s da subtra‡âo.
+             JMP XYZ :  Atribui um novo valor para o Contador de Programa 
+        do programa em execu‡âo, que passa a ser executado a partir dessa 
+        posi‡âo. 
+             JNG  XYZ  :  O  conte£do do acumulador  ‚  checado  e,  caso 
+        contenha  um valor negativo,  o valor de XYZ ‚ atribu¡do  ao  CP. 
+        Caso  o  acumulador nâo seja negativo,  o programa  continua  sua 
+        execu‡âo  a partir da pr¢xima instru‡âo em rela‡âo ao endere‡o em 
+        que se encontra.
+
+
+                                        3
+
+
+
+
+
+
+
+
+        3 - Guia do usu rio
+
+             O objetivo deste guia nâo ‚ transmitir toda informa‡âo sobre 
+        o sistema,  mas prover informa‡ùes suficientes para que o usu rio 
+        proceda na utiliza‡âo do software.
+
+             3.1 - Padroniza‡ùes e conven‡ùes
+
+             Mensagens de informa‡âo ou de ocorrˆncia de erro de opera‡âo 
+        sâo  dispostas  no monitor de v¡deo.  Essas mensagens  aparecerâo 
+        dentro  de quadros emoldurados e ficarâo expostas at‚ que  alguma 
+        tecla seja pressionada ou at‚ que certo limite de tempo expire.
+             Quando o nome de um arquivo for solicitado pelo programa,  a 
+        entrada dever  ser efetuada de forma completa :  diret¢rio onde o 
+        arquivo se encontra, nome do arquivo e extensâo do nome.
+             Por conven‡âo,  este manual indicar  os dados de entrada  de 
+        usu rios da seguinte forma :
+             - < > serâo utilizados para indicar que uma £nica tecla,  ou 
+        combina‡âo de teclas,  deve ser pressionada, podendo ser tanto em 
+        mai£sculo quanto em min£sculo.
+             Ex : <E> indica que e ou Shift + e deve ser pressionado.
+             - Palavras que deverâo ser digitadas pelo usu rio aparecerâo 
+        da seguinte forma : 
+                  - No caso de palavras espec¡ficas,  essas aparacerâo em 
+        mai£sculo. Ex : PROG1.ARQ.
+                  - Dados  nâo espec¡ficos,  como o nome de  um  arquivo, 
+        aparecerâo  entre parˆnteses e serâo grafados em min£sculo.  Ex :   
+        (nome do programa).
+
+             O  som  de  um  bip ser  ouvido toda  vez  que  ocorrer  uma 
+        tentativa de exceder o espa‡o destinado para a escrita de um dado 
+        de entrada.
+             Teclas  que  oferecem op‡ùes de a‡âo durante a  opera‡âo  do 
+        sistema serâo vis¡veis na tela do monitor de  v¡deo,  aparecendo, 
+        normalmente, na parte inferior da tela.
+             Em  ocasiùes onde se deve optar entre opera‡ùes espec¡ficas, 
+        as  opera‡ùes aparecerâo destacadas em barras e a sele‡âo  poder  
+        ser  feita  posicionando-se  a  barra sobre a  op‡âo  desejada  e 
+        pressionando-se  <Enter>,   ou  entâo  pressionando-se  a   tecla 
+        correspondente … letra destacada na op‡âo escolhida.
+             A  tecla  <Esc>  tem  a fun‡âo de cancelar  a  £ltima  op‡âo 
+        selecionada,  funcionando  em qualquer parte do sistema  a  menos 
+        durante a execu‡âo de programas de usu rios.
+             Informa‡ùes  de  aux¡lio para a utiliza‡âo do  software  sâo 
+        dispon¡veis durante a opera‡âo. Para tanto, basta pressionar-se a 
+        tecla  <F1> que,  informa‡ùes,  relacionadas ao contexto onde  se 
+        encontra a execu‡âo do sistema, serâo mostradas na tela. As setas 
+        para  cima  e  para baixo possibilitam a  movimenta‡âo  entre  as 
+        p ginas  de  informa‡âo  e  <Esc> retorna o  programa  ao  estado 
+        anterior … digita‡âo de <F1>.
+
+
+
+
+
+
+
+                                        4
+
+
+
+
+
+
+
+
+             3.2 - Ambiente para utiliza‡âo
+
+             Al‚m  do hardware e do sistema operacional implementados,  o 
+        sistema apresenta um ambiente de apoio ao usu rio nas tarefas  de 
+        programa‡âo, execu‡âo, depura‡âo e testes de programas elaborados 
+        para a m quina simulada.
+             Uma  vez  ligado  o microcomputador e  carregado  o  sistema 
+        operacional  DOS  ou  compat¡vel,  os sistema  SOMAT  poder   ser 
+        executado  digitando-se  SOMAT e  pressionando-se  <Enter>.  Para 
+        isso,  o  disquete  1,  do sistema,  dever  estar posicionado  na 
+        unidade de disco em uso, ou os arquivos do sistema devem ter sido 
+        previamente copiados no subdiret¢rio em uso no disco r¡gido.
+             Para  o  funcionamento completo  do  sistema,  os  seguintes 
+        arquivos sâo necess rios :
+             
+             SOMAT.EXE
+             IMAGENS.FIG
+             CGA.BGI
+             TRIP.CHR
+             LIT.CHR
+             DIRET.HLP
+             EDI.HLP
+             EXEC.HLP
+             VISU.HLP
+             ESPEC.HLP
+             FIM.HLP
+
+             O  sistema  pode  operar,  entretanto,  sem a  presen‡a  dos 
+        arquivos  *.HLP,  que  cont‚m informa‡ùes para  consulta  durante 
+        utiliza‡âo.
+             Recomenda‡ùes :
+
+             - Fazer uma c¢pia dos disquetes antes de sua utiliza‡âo
+             - Utilizar  o disquete do sistema com selo de prote‡âo  para 
+        nâo assimilar eventuais v¡rus
+             - Para utiliza‡âo,  o disquete 1 ( do sistema ) ‚ suficiente 
+        mas recomenda-se que um disquete diferente seja utilizado para  a 
+        sa¡da dos resultados.
+
+             Uma tela de apresenta‡âo do sistema ‚ mostrada no monitor de 
+        v¡deo quando o sistema ‚ carregado.  
+             Assim  que  uma tecla for pressionada ou  certo  per¡odo  de 
+        tempo  for  decorrido,  a tela desaparece e o menu  principal  do 
+        sistema  torna-se  vis¡vel.  As op‡ùes dispon¡veis sâo  mostradas 
+        numa linha no alto da tela.
+             No  ambiente  do sistema as seguintes  opera‡ùes  podem  ser 
+        realizadas :
+             - Cria‡âo  e edi‡âo de arquivos contendo lotes de  programas 
+        de usu rios
+             - Execu‡âo de programas de usu rios,  previamente preparados 
+        pelo editor
+             - Visualiza‡âo dos arquivos contendo o resultado da execu‡âo 
+        dos programas
+             - Verifica‡âo dos arquivos presentes nos diret¢rios
+             - Altera‡âo da configura‡âo do hardware simulado
+
+
+                                        5
+
+
+
+
+
+
+
+
+             3.3 - Editor de programas
+
+             O  editor  tem a fun‡âo de facilitar a montagem de  arquivos 
+        contendo programas de usu rio, encadeados na forma de lotes.
+             Cada  p gina  montada atrav‚s do editor  corresponde  a  uma 
+        linha,  de controle ou de programa, que seria lida de um terminal 
+        de entrada ou de uma leitora de cartùes.
+             O editor ‚ capaz de verificar a digita‡âo de instru‡ùes  nâo 
+        pertencentes ao sistema operacional simulado e ‚ orientado …  sua 
+        linguagem de controle de programa ( JCL ).
+             Quando  a  op‡âo  de Edi‡âo  ‚  selecionada,  um  quadro  de 
+        mensagem  ‚ exibido na tela e o sistema fica aguardando at‚ que o 
+        usu rio digite o nome do arquivo que ser  editado.
+             Ex: B:\FONTES\PROGRAMA.ARQ <Enter>
+
+             Nesse ponto, o sistema faz a busca do arquivo selecionado e,
+        tendo encontrado ou nâo, passa a exibir na tela a primeira p gina 
+        do arquivo.  
+             Por  ser  o editor orientado …  estrutura  de  p ginas,  seu 
+        funcionamento  baseia-se  na altera‡âo ( reforma  ),  inser‡âo  e 
+        elimina‡âo  de  p ginas do arquivo em  edi‡âo.  Desta  forma,  as 
+        seguintes opera‡ùes sâo as respons veis pelo seu funcionamento : 
+             <R> : reforma a p gina sendo mostrada na tela.
+             <A> :  insere uma nova p gina antes da p gina sendo mostrada 
+        na tela.
+             <D> : insere uma nova p gina depois da p gina sendo mostrada 
+        na tela.
+             <E> : elimina a p gina sendo mostrada na tela.
+             <Esc> : finaliza a edi‡âo do arquivo.
+             <PgUp>,  <PgDn>,  <Home> e <End> :  propiciam o deslocamento 
+        entre as p ginas do arquivo em edi‡âo.
+             <F1> : fornece informa‡ùes sobre a edi‡âo de programas.
+             <F2> : salva o arquivo em edi‡âo.
+
+             Para  a  montagem  de  uma  p gina  do  arquivo,   que  pode 
+        representar uma linha de comando,  de instru‡âo ou de dados de um 
+        programa,  a tecla <R> deve ser selecionada quando a p gina a ser 
+        alterada  estiver sendo mostrada na tela.  O sistema ir  aguardar 
+        entâo at‚ que o usu rio defina o tipo da p gina que ser  editada, 
+        (  <F2> mostra os tipos das p ginas ) para que somente os  campos 
+        significativos  ao tipo de p gina escolhido sejam preenchidos.
+             Se  o tipo da p gina for * ( Comando ) ou D ( Dado ) somente 
+        o  campo  denominado CAMPO1 ser  preenchido em  cada  palavra  da 
+        p gina.
+             Caso  a p gina seja de instru‡âo ( C c¢digo ),  os campos Op 
+        (mnem“nico da instru‡âo), PAG e DESL deverâo ser preenchidos.
+             Caso, durante o preenchimento do mnem“nico de uma instru‡âo, 
+        o  usu rio  digitar o nome de uma instru‡âo  nâo  pertencente  ao 
+        conjunto  de instru‡ùes do sistema operacional,  o editor emitir  
+        uma  mensagem  de  erro,  possibilitando  ao  usu rio  alterar  a 
+        instru‡âo digitada ou conserv -la,  gerando um erro fatal durante 
+        a execu‡âo do programa.
+             As  setas  proporcionam a movimenta‡âo entre os  campos  das 
+        palavras da p gina.
+             <Esc> serve para finalizar a edi‡âo da p gina.
+
+
+                                        6
+
+
+
+
+
+
+
+
+             Informa‡ùes sobre a sintaxe que deve ser seguida para que os 
+        programas  correspondam  … JCL do sistema operacional e  sobre  o 
+        repert¢rio  de  instru‡ùes  podem ser obtidas  pressionando-se  a 
+        tecla <F1> durante a edi‡âo.
+             Ao  final  da  edi‡âo,  o usu rio tem a op‡âo  de  salvar  o 
+        arquivo em uso ou nâo. 
+
+
+             3.4 - Diret¢rio
+
+             Tem  a  fun‡âo  somente  de informar  ao  usu rio  quais  os 
+        arquivos que constam nos diret¢rios que forem consultados.
+             Selecionada a op‡âo de diret¢rio, o programa aguarda at‚ que 
+        o usu rio digite as especifica‡ùes ( m scara ) do diret¢rio e dos 
+        arquivos que deseja consultar.
+             Ex: B:\FONTES\*.ARQ <Enter>
+             Os  arquivos que corresponderem … m scara especificada  pelo 
+        usu rio  serâo dispostos em uma janela na  tela.  Pressionando-se 
+        qualquer  tecla,  o programa retorna ao menu principal,  ou exibe 
+        uma nova listagem de arquivos,  casos nâo tenham cabido todos  os 
+        arquivos na janela anterior.
+
+
+             3.5 - Visualiza‡âo
+
+             Arquivos contendo o resultado da execu‡âo de programas podem 
+        ser visualizados atrav‚s do procedimento de visualiza‡âo.
+             Selecionada  esta op‡âo,  o usu rio dever  digitar o nome do 
+        arquivo a ser visualizado. Como todos os arquivos de sa¡da terâo, 
+        obrigatoriamente, a extensâo  .SOS, esta parte do nome do arquivo 
+        nâo precisar  ser especificada pelo usu rio.
+             Ex: B:\FONTES\ARQSAIDA.SOS
+              ou B:\FONTES\ARQSAIDA
+             
+             Caso seja encontrado, o arquivo ser  exibido na tela.
+             As  setas  e  as  teclas  <PgUp>,  <PgDn>,  <Home>  e  <End> 
+        possibilitam a movimenta‡âo dentro do arquivo, enquanto <Esc> faz 
+        com que o sistema retorne ao menu principal.
+             
+             OBS : Nâo ‚ poss¡vel alterar o arquivo sendo visualizado.
+
+
+             3.6 - Especifica‡âo
+         
+             Atrav‚s desta op‡âo ‚ poss¡vel alterar-se caracter¡sticas do 
+        hardware  simulado e do sistema operacional,  com a finalidade de 
+        observar o funcionamento do sistema sob configura‡ùes diferentes.
+             Para  que  qualquer  caracter¡stica  seja  alterada,   basta 
+        posicionar-se  o  cursor  junto … caracter¡stica  que  se  deseja 
+        modificar  e  digitar-se  o novo valor.  Um novo  valor  s¢  ser  
+        aceito,  entretanto,  se estiver dentro dos limites estabelecidos 
+        para cada parƒmetro.
+             As  setas para cima e para baixo possibilitam que se mova  o 
+        cursor entre as op‡ùes.  <Esc> finaliza as altera‡ùes e retorna o 
+        sistema ao menu principal.
+
+
+                                        7
+
+
+
+
+
+
+
+
+             3.7 - Execu‡âo de programas
+
+             Esta  op‡âo  permite  que o usu rio submeta um  conjunto  de 
+        programas, agrupados em arquivos previamente editados, … execu‡âo 
+        no equipamento simulado.
+             Selecionada  a  op‡âo de execu‡âo,  o usu rio  dever   optar 
+        entre a execu‡âo de um £nico arquivo de programas e a execu‡âo de 
+        todos  os  arquivos  cujos  nomes  correspondem  a  uma   m scara 
+        espec¡fica.
+             Se  a  execu‡ao de um £nico lote for  escolhida,  o  usu rio 
+        dever ,  em seguida, digitar o nome do arquivo de entrada onde se 
+        encontram os programas.
+             Ex :  <X>    { seleciona execu‡âo de programas }
+                   <E>    { seleciona execu‡âo de um £nico lote }
+                   Arquivo de entrada
+                   B:\FONTES\PROGRAMA.ARQ <Enter>
+
+             Caso  a busca direta dos arquivos seja a op‡âo escolhida,  o 
+        usu rio  dever  especificar o nome do diret¢rio onde os  arquivos 
+        se encontram e a extensâo de seus nomes.
+             Ex :  <X>    { seleciona execu‡âo de programas }
+                   <B>    { seleciona busca direta dos arquivos }
+                   Dir :      B:\FONTES <Enter>
+                   Extensâo : ARQ <Enter>
+
+             Ap¢s  ter sido definida a forma de entrada,  o  sistema  ir  
+        mostrar  um  quadro na tela possibilitando ao usu rio optar  pela 
+        sa¡da dos resultados dos programas na impressora.
+             Ex : Deseja sa¡da para impressora (S/N) ? <S>
+             
+             Neste caso,  as condi‡ùes de funcionamento da impressora sâo 
+        testadas.  Caso alguma irregularidade seja encontrada,  o sistema 
+        mostrar  uma mensagem de erro e retornar  ao menu principal.
+             Se  a  sa¡da na impressora nâo for desejada,  o nome  de  um 
+        arquivo  para  sa¡da  dever  ser  especificado.  Caso  o  arquivo 
+        especificado j  exista em disco,  o usu rio poder  escolher entre 
+        reescrevˆ-lo  ou  adicionar  os  novos  dados  ao  final  do  seu 
+        conte£do.
+             Ex:  Deseja sa¡da para impressora (S/N) ? <N>
+                  Arquivo de sa¡da
+                  (SAæDA.SOS)
+                  Arquivo j  existente
+                  Sobrescreve ou insere (S/I) ? <I>
+
+             Obs : Todo arquivo de sa¡da ter  a extensâo  .SOS, mesmo que 
+        o  usu rio  indique outra extensâo quando o nome do  arquivo  for 
+        especificado.
+
+             Definidas  as formas de entrada e de sa¡da de  programas,  o 
+        modo de acompanhamento da execu‡âo dever  ser especificado.
+             Usu rio,  Supervisor  Gr fico e Hardware constituem os modos 
+        existentes.
+             Ap¢s estas etapas,  a execu‡âo dos programas tem in¡cio.  As 
+        caracter¡sticas do modo de acompanhamento,  entretanto, podem ser 
+        alteradas durante a execu‡âo dos programas.
+
+
+                                        8
+
+
+
+
+
+
+
+
+             O  acompanhamento  da execu‡âo dos programas tem  in¡cio  no 
+        modo  Passo-a-Passo.  Isso  exige que uma tecla seja  pressionada 
+        para que o programa prossiga sua execu‡âo a cada novo passo.
+             A  tecla <P> tem a fun‡âo de ativar ou desativar a  execu‡âo 
+        Passo-a-Passo.
+             No modo de execu‡âo cont¡nua os programas sâo executados at‚ 
+        o final,  sem interrup‡ùes, a menos que o usu rio restaure o modo 
+        Passo-a-Passo.
+             As  teclas <+> e <-> servem para controlar a  velocidade  da 
+        execu‡âo animada dos programas. A velocidade varia entre 1 e 10.
+             <M>  permite  que  o modo de  acompanhamento  seja  alterado 
+        durante a execu‡âo dos programas.
+             <I> interrompe momentaneamente a execu‡âo dos programas. Uma 
+        vez interrompida a execu‡âo : <C> faz com que ela continue; <Esc> 
+        finaliza  a  execu‡âo dos programas do arquivo de entrada  atual; 
+        <F>  mostra  a situa‡âo das filas de recursos  compartilhados  do 
+        sistema operacional ( somente nos modos do Usu rio e Supervisor). 
+             <F1>  pressionado durante a execu‡âo dos programas exibe  as 
+        teclas  que  possuem fun‡âo durante a  execu‡âo.  Qualquer  tecla 
+        pressionada faz com que a execu‡âo prossiga.
+
+
+             3.8 - Fim de execu‡âo
+
+             Finaliza  a  execu‡âo  do sistema e retorna  o  controle  do 
+        microcomputador ao DOS.
+
+
+             3.9 - Outras teclas com fun‡ùes
+
+             <F1>,  pressionado  no menu principal,  fornece  informa‡ùes 
+        sobre  a op‡âo de execu‡âo que se encontra destacada com a  barra 
+        de sele‡âo.
+
+             <F2> - Zap,  restaura a tela do menu principal,  apagando as 
+        informa‡ùes resultantes da execu‡âo dos arquivos de programas.
+
+
+        4 - Exemplo de utiliza‡âo do sistema
+
+             Para  iniciar  a  opera‡âo do sistema  SOMAT,  digite  SOMAT 
+        <Enter> com o disco 1 ( sistema ) inserido na unidade de disco em 
+        uso.
+             Caso  todos  os  arquivos  necess rios  …  execu‡âo  estejam 
+        presentes  a  execu‡âo  do programa ter  in¡cio  e  uma  tela  de 
+        apresenta‡âo ser  mostrada no v¡deo.
+             A seguir, a tela desaparecer  e o menu principal de execu‡âo 
+        se tornar  vis¡vel.
+
+
+
+
+
+
+
+
+
+                                        9
+
+
+
+
+
+
+
+
+             4.1 - Edi‡âo de programas
+
+             Suponhamos  que  se queira preparar um programa  de  usu rio 
+        para fazer a soma de dois vetores de 2 elementos,  somando tamb‚m 
+        os valores das somas parciais positivas e negativas e imprimir os 
+        resultados obtidos.
+             O programa corresponderia ao seguinte algoritmo :
+
+             Algoritmo
+
+             1 - Carregar os dados do disco na memoria
+             2 - Zerar os somadores parciais
+             3  - Somar os primeiros elementos dos vetores e armazenar  o 
+        valor da soma
+             4 - Caso a soma seja negativa 
+                  Entâo armazenar soma negativa
+                  Senâo armazenar soma positiva
+             5  - Somar  os segundos elementos dos vetores e armazenar  o 
+        valor da soma
+             6 - Caso a soma seja negativa 
+                  Entâo armazenar soma negativa
+                  Senâo armazenar soma positiva
+             7 - Imprimir resultados
+             8 - Finalizar execu‡âo
+
+             Fim do algoritmo
+
+
+             Refinamentos
+
+             Refinamento 1 - Carregar os dados do disco na mem¢ria
+
+             Consiste em ler os dados de entrada de uma p gina de  dados, 
+        carregada  junto com o programa,  e armazen -la em uma p gina  de 
+        rascunho do programa na mem¢ria.
+             Considerando que o programa reserve duas p ginas de rascunho 
+        ( 0 e 1 ) para  rea de trabalho,  a leitura dos dados poderia ser 
+        feita assim :
+
+             RD  0 0    
+
+             Significando  :  Leia o conte£do da p gina de dados corrente 
+        em disco e armazene na p gina 0 de dados.
+
+             Os  elementos  dos  vetores poderiam  estar  armazenados  na 
+        p gina de dados da seguinte forma :
+
+             palavra 0 :    1 elemento do vetor 1
+             palavra 1 :    2 elemento do vetor 1
+             palavra 2 :    1 elemento do vetor 2
+             palavra 3 :    2 elemento do vetor 2
+
+
+
+
+
+
+                                       10
+
+
+
+
+
+
+
+
+             Refinamento 2 - Zerar os somadores parciais
+
+             Uma  vez que a p gina de dados foi carregada na  mem¢ria,  o 
+        seu conte£do pode ser manipulado atrav‚s das instru‡ùes.
+             Suponhamos  que a p gina 1 de rascunho seja utilizada para o 
+        armazenamento  dos  resultados,  onde  :  palavra  0  conteria  o 
+        resultado  da  soma  dos 1os elementos  dos  vetores,  palavra  1 
+        conteria  o  resultado  da soma dos 2os  elementos  dos  vetores, 
+        palavra  6 conteria a soma das parcelas negativas,  e  palavra  7 
+        conteria o resultado da soma dos valores positivos.
+
+             A sequˆncia
+
+             LD  0 0  { Carrega dado no acumulador }     
+             SUB 0 0  { Zera valor no acumulador }
+             STR 1 6  { Armazena valor zero }
+             STR 1 7  { Armazena valor zero }
+
+             faria  o  armazenamento do valor zero nas posi‡ùes 6 e 7  da 
+        p gina 1 de rascunho, destinas aos somadores.
+
+
+             Refinamento  3 - Somar os primeiros elementos dos vetores  e 
+        armazenar o valor da soma
+
+             Consiste em carregar o primeiro dados no acumulador e  som -
+        lo ao segundo dado, obtendo o resltado no pr¢prio acumulador.
+
+             LD  0 0
+             ADD 0 2
+             STR 1 0
+
+             Refinamento 4 - Acumular soma positiva ou negativa
+
+             O conte£do do acumulador ‚ verificado;  caso ele contenha um 
+        valor  negativo,  o programa ‚ desviado para a rotina de  ac£mulo 
+        dos valores negativos;  caso contr rio o seu conte£do ‚ acumulado 
+        no somador positivo.
+
+                       JNG posicao X
+                       ADD 1 7
+                       STR 1 7
+                       JMP posi‡âo Y
+        Posi‡âo X      ADD 1 6
+                       STR 1 6
+        Posi‡âo Y                          { continua o programa }
+
+
+             Refinamento 5 e Refinamento 6 : Seguem a mesma estrutura dos 
+        refinamentos 3 e 4.
+
+
+
+
+
+
+
+                                       11
+
+
+
+
+
+
+
+
+             Refinamento 7 - Imprimir os resultados
+
+              Para imprimir os resultados basta que o conte£do da  p gina 
+        1 da  rea de rascunho,  que estava sendo utilizada para armazenar 
+        os resultados, seja impressa.
+             
+             PRN 1 0
+
+
+             Refinamento 8 - Finalizar execu‡âo
+             
+             A instru‡âo HLT 0 0 finaliza a execu‡âo do programa.
+
+
+             Seguindo  a  linguagem  de controle de programa  do  sistema 
+        operacional  implementado,  o programa descrito teria a  seguinte 
+        forma final :
+
+             P gina inicial de comandos
+
+             * 0
+             * 1991 { Identificador do Job }
+             * 50   { Tempo previsto p execu‡âo : +/- 20 instru‡ùes }
+             * 3    { N£mero de p ginas de c¢digo }
+             * 2    { N£mero de p ginas de rascunho }
+             * 1    { N£mero de p ginas de impressâo }
+             * -
+             * -
+
+             P gina de in¡cio de c¢digo
+
+             * 1
+             * -
+             * -
+             * -
+             * -
+             * -
+             * -
+             * -
+
+             Primeira p gina de c¢digo ( p gina 0 )
+
+             C RD  0 0
+             C LD  0 0 
+             C SUB 0 0 
+             C STR 1 6
+             C STR 1 7
+             C LD  0 0
+             C ADD 0 2
+             C STR 1 0
+
+
+
+
+
+
+
+                                       12
+
+
+
+
+
+
+
+
+             Segunda p gina de c¢digo  ( p gina 1 )
+         
+             C JNG 1 4
+             C ADD 1 7 
+             C STR 1 7 
+             C JMP 1 6
+             C ADD 1 6
+             C STR 1 6
+             C LD  0 1
+             C ADD 0 3
+             
+             Terceira p gina de c¢digo ( p gina 2 )
+
+             C STR 1 1
+             C JNG 2 5
+             C ADD 1 7 
+             C STR 1 7 
+             C JMP 2 7
+             C ADD 1 6
+             C STR 1 6
+             C PRN 1 0
+
+             Quarta p gina de c¢digo ( p gina 3 )
+
+             C HLT 0 0
+             C   -
+             C   -
+             C   -
+             C   -
+             C   -
+             C   -
+             C   -
+
+             P gina de in¡cio de dados
+
+             * 2
+             * -
+             * -
+             * -
+             * -
+             * -
+             * -
+             * -
+
+             P gina de dados
+
+             D  A [1]
+             D  A [2]
+             D  B [1]
+             D  B [2]
+             D   -
+             D   -
+             D   -
+             D   -
+
+
+
+                                       13
+
+
+
+
+
+
+
+
+             P gina de fim de programa
+
+             * 3
+             * -
+             * -
+             * -
+             * -
+             * -
+             * -
+             * -
+
+             A partir do menu principal, a edi‡âo do programa seria feita 
+        da seguinte forma : 
+             <E> : Seleciona edi‡âo de programa
+             O nome do arquivo de programas ‚ solicitado :
+             Arquivo a editar
+             PROGTEST.ARQ <Enter>
+
+             Neste  momento,  o  editor  far   a  busca  do  programa  no 
+        diret¢rio corrente,  ou no diret¢rio especificado, trazendo o seu 
+        conte£do para a mem¢ria, caso o programa j  exista. Se o programa 
+        nâo  existir,  ele ser  criado na mem¢ria,  podendo ser salvo  em 
+        disco.
+
+             Assim  como  outros  editores de  programas  o  espa‡o  para 
+        preenchimento  de novas p ginas deve ser requisitado … medida  em 
+        que  for  necess rio.  Isto poder  ser feito digitando-se <A>  ou 
+        <D>,   para   inserir   uma   nova   p gina   antes   ou   depois 
+        (respectivamete) da p gina sendo mostrada na tela.
+             Para alterar-se o conte£do da p gina sendo mostrada na tela, 
+        <R> deve ser pressionado.  Em seguida,  o tipo da p gina seve ser 
+        especificado ( <*>, <D>, <C> ou <Enter> - caso deseje-se manter o 
+        tipo  j   especificado para a p gina ) e a altera‡âo  dos  campos 
+        relevantes ao tipo de p gina especificado poderâo ser alterados.
+             As  setas proporcionam os movimentos entre os campos e <Esc> 
+        finaliza a edi‡âo da p gina.
+             <F2> possibilita que se salve o conte£do do arquivo.
+             Para  a  montagem  do  programa  especificado,   a  seguinte 
+        sequˆncia de a‡ùes poderia ser efetuada :
+             <R>    { reforma a p gina mostrada na tela }
+             ( dados da primeira p gina de comandos )
+             <Esc>  { finaliza edi‡âo da p gina }
+             <D>    { insere nova p gina depois da atual }
+             { repetir o processo at‚ a £ltima p gina de comandos }
+             <Esc>  { finaliza a edi‡âo do programa }
+
+             Neste   ponto,   o  programa  ir   oferecer  ao  usu rio   a 
+        possibilidade  de salvar o conter£do do programa.  Caso <S>  seja 
+        pressionado,  o  programa  ser   salvo  em disco  e  a  edi‡âo  ‚ 
+        finalizada. <N> somente finaliza a edi‡âo e <Esc> cancela a op‡âo 
+        de abandonar a edi‡âo.
+             Ao  encerrar-se  a edi‡âo,  o programa retorna ao  seu  menu 
+        principal de execu‡âo.
+
+
+
+
+                                       14
+
+
+
+
+
+
+
+
+             4.2 - Execu‡âo de programa
+
+             <X>  { Seleciona a execu‡âo de programa }
+             <E>  { Seleciona execu‡âo de um £nico arquivo de programas }
+             
+             Arquivo de entrada
+             PROGTEST.ARQ <Enter>
+
+             Deseja sa¡da para impressora (S/N) ? <N>
+             
+             Arquivo de sa¡da
+             SAIDA.SOS  
+
+             <U> { Seleciona acompanhamento orientado … visâo do usu rio} 
+
+             A  sequˆncia  descrita  corresponde … execu‡âo de  um  £nico 
+        arquivo contendo programas de usu rio,  com sa¡da dos  resultados 
+        direcionada para o arquivo SAæDA.SOS em disco.
+
+             
+             4.3 - Diret¢rio
+
+             <D>  Seleciona a op‡âo de verifica‡âo dos arquivos presentes 
+        nos diret¢rios.
+
+             Diret¢rio
+             B:\*.SOS <Enter>  { Seleciona a busca dos arquivos  contendo 
+        resultado  de execu‡âo de programas que se encontram no diret¢rio 
+        raiz do drive B }
+
+
+             4.4 - Visualiza‡âo
+
+             <V>  Seleciona  a  op‡âo  de  visualiza‡âo  do  conte£do  de 
+        arquivos que cont‚m o resultado da execu‡âo de programas.
+             O nome do arquivo (nâo ‚ necess ria a extensâo do nome:.SOS) 
+        deve entâo ser fornecido pelo usu rio.
+             
+             Nome do arquivo
+             SAæDA.SOS <Enter>
+
+             Setas,   <PgUp>,  <PgDn>,  <Home>  e  <End>  proporcionam  a 
+        movimenta‡âo  no arquivo sendo visualizado,  e <Esc>  finaliza  a 
+        visualiza‡âo  do  arquivo,  retornando  o programa  para  o  menu 
+        principal de execu‡âo. 
+
+
+             4.5 - Especifica‡ùes
+
+             A  altera‡âo  das  caracter¡sticas  do  hardware  e  sistema 
+        operacional podem ser feitas neste m¢dulo do programa.
+             A  sele‡âo do m¢dulo de especifica‡ùes ‚ feita pressionando-
+        se <S> a partir do menu principal do programa.
+             As  setas  possibilitam  que  se mova  entre  as  op‡ùes  de 
+        altera‡âo  e <Esc> finaliza as atera‡ùes.
+
+
+                                       15
+
+
+
+
+
+
+
+
+             Os  valores especificados somente serâo v lidos se estiverem 
+        dentro   do   intervalo  de  varia‡âo   determinado   para   cada 
+        caracter¡stica. 
+
+
+             4.6 - Fim
+
+             <F>  ou <Esc> pressionados com o programa no menu  principal 
+        causam o t‚rmino de sua execu‡âo.
+             A  confirma‡âo do t‚rmino da execu‡âo ‚ exigida do  usu rio, 
+        entretanto.
+
+        Confirma fim de programa (S/N) ?   <S>    { finaliza execu‡âo }
+                                           <N>    { continua execu‡âo }
+                                           <Esc>  { cancela finaliza‡âo }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       16
+
+
+
+
+
+
